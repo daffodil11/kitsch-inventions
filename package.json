@@ -1,0 +1,19 @@
+{
+  "name": "kitsch-inventions",
+  "version": "1.0.0",
+  "description": "A place to curate my little kitchen projects, while learning Skeleton",
+  "private": true,
+  "scripts": {
+    "test": "gulp-npm-test"
+  },
+  "author": "Simon Davey",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^6.5.1",
+    "eslint": "^4.19.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "hoek": "^5.0.3"
+  }
+}
