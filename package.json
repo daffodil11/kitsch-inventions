@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A place to curate my little kitchen projects, while learning Skeleton",
   "private": true,
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/daffodil11/kitsch-inventions.git"
+  },
   "scripts": {
     "test": "gulp-npm-test"
   },
