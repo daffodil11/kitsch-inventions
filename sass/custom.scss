@@ -1,0 +1,26 @@
+$row-top-margin: 20px;
+
+.container div.row {
+    margin-top: $row-top-margin;
+}
+
+.container div.row div h5 {
+    text-align: justify;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.container div.row div h1 {
+    text-align: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.container div.row div {
+    img.left {
+        float: left;
+    }
+    img.right {
+        float: right;
+    }
+}

@@ -1,0 +1,22 @@
+.container div.row {
+  margin-top: 20px; }
+
+.container div.row div h5 {
+  text-align: justify;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 10px; }
+
+.container div.row div h1 {
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 100; }
+
+.container div.row div img.left {
+  float: left; }
+
+.container div.row div img.right {
+  float: right; }
