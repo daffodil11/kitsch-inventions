@@ -1,7 +1,18 @@
-$row-top-margin: 20px;
+$base-margin: 20px;
+$base-colour: #EAE8E4;
+$overlay-v-pad: 12px;
+$overlay-h-pad: 10px;
+
+body {
+    background-color: $base-colour;
+}
+
+.container:first-child div.row {
+    margin-top: $base-margin / 2;
+}
 
 .container div.row {
-    margin-top: $row-top-margin;
+    margin-bottom: $base-margin;
 }
 
 .container div.row div h5 {
@@ -10,17 +21,65 @@ $row-top-margin: 20px;
     margin-left: 10px;
 }
 
-.container div.row div h1 {
-    text-align: center;
-    justify-content: center;
-    z-index: 100;
+.container {
+    z-index: 10;
+    
+    div {
+        z-index: inherit;
+
+        div {
+            position: relative;
+            
+            img.left {
+                float: left;
+                z-index: inherit;
+                border: 1px solid black;
+            }
+            img.right {
+                float: right;
+                z-index: inherit;
+                border: 1px solid black;
+            }
+            div {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
+                
+                h3 {
+                    text-align: center;
+                    background-color: $base-colour;
+                    border: 1px solid black;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                }
+            }
+        }
+    }
 }
 
-.container div.row div {
-    img.left {
-        float: left;
-    }
-    img.right {
-        float: right;
+.container div.overlay {
+    z-index: 100;
+    margin-bottom: 0px;
+    height: 0px;
+    
+    div {
+        z-index: inherit;
+        height: inherit;
+        
+        h1 {
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            z-index: inherit;
+            top:-45px;
+            background-color: $base-colour;
+            padding-top: $overlay-v-pad - 5;
+            padding-bottom: $overlay-v-pad;
+            padding-left: $overlay-h-pad;
+            padding-right: $overlay-h-pad;
+            border: 1px solid black;
+        }
+        
     }
 }

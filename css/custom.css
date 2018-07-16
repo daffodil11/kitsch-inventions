@@ -1,5 +1,11 @@
+body {
+  background-color: #EAE8E4; }
+
+.container:first-child div.row {
+  margin-top: 10px; }
+
 .container div.row {
-  margin-top: 20px; }
+  margin-bottom: 20px; }
 
 .container div.row div h5 {
   text-align: justify;
@@ -8,15 +14,50 @@
   justify-content: center;
   margin-left: 10px; }
 
-.container div.row div h1 {
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 100; }
+.container {
+  z-index: 10; }
+  .container div {
+    z-index: inherit; }
+    .container div div {
+      position: relative; }
+      .container div div img.left {
+        float: left;
+        z-index: inherit;
+        border: 1px solid black; }
+      .container div div img.right {
+        float: right;
+        z-index: inherit;
+        border: 1px solid black; }
+      .container div div div {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%; }
+        .container div div div h3 {
+          text-align: center;
+          background-color: #EAE8E4;
+          border: 1px solid black;
+          margin-left: 25%;
+          margin-right: 25%; }
 
-.container div.row div img.left {
-  float: left; }
-
-.container div.row div img.right {
-  float: right; }
+.container div.overlay {
+  z-index: 100;
+  margin-bottom: 0px;
+  height: 0px; }
+  .container div.overlay div {
+    z-index: inherit;
+    height: inherit; }
+    .container div.overlay div h1 {
+      position: relative;
+      text-align: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      z-index: inherit;
+      top: -45px;
+      background-color: #EAE8E4;
+      padding-top: 7px;
+      padding-bottom: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid black; }
